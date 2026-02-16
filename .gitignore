@@ -1,0 +1,30 @@
+# Environment variables
+.env
+.env.local
+.env.*.php
+
+# IDE & Editor
+.idea/
+.vscode/
+*.swp
+*.swo
+*.swn
+.DS_Store
+
+# Dependencies
+vendor/
+composer.lock
+
+# Logs
+logs/
+*.log
+
+# PHP
+*.php~
+
+# OS
+Thumbs.db
+.DS_Store
+
+# XAMPP
+htdocs/

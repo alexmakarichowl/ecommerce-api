@@ -1,0 +1,13 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    # If DocumentRoot = public/: use /
+    # If in subfolder (e.g. /ecommerce_api/public/): use /ecommerce_api/public/
+    RewriteBase /
+    
+    # Allow direct access to existing files and directories
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    
+    # Front controller: all requests go through index.php
+    RewriteRule ^ index.php [L]
+</IfModule>

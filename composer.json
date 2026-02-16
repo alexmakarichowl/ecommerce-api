@@ -1,0 +1,14 @@
+{
+    "name": "ecommerce/api",
+    "description": "E-commerce REST API - PHP + MySQL",
+    "type": "project",
+    "require": {
+        "php": ">=8.0"
+    },
+    "autoload": {
+        "classmap": [
+            "app/",
+            "config/"
+        ]
+    }
+}
